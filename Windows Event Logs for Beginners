@@ -1,0 +1,29 @@
+Windows event log types:
+
+Application Log: any event logged by an application. 
+System Log: operating system (ex: failure to start a drive)
+Security Log: any event that matters to security (ex: deleting files, failing to login, etc)
+Directory service log: records events of AD - only available on a domain controller
+	- DNS Server log
+	- File replication service log
+
+Event log classifications:
+
+Information - event that describes the successful operation of a task, such as an application, driver, or service. 
+Warning - not necessarily significant; however, may indicate the possible occurrence of a future problem.
+Error - Problem or error.
+
+Understanding an event:
+
+Event log headers include the following information:
+	- Date, time, user, computer, eventID, source, and type (warning, error, info, etc)
+
+Critical security events that need auditing (but may not be getting audited):
+	- User log on/off
+	- Computer logon/logoff/restart
+	- Access to objects, files, folders
+	- System time is modified
+	- Audit logs are cleared
+
+
+
